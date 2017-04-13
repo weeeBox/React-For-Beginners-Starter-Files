@@ -3,7 +3,7 @@ import React from 'react';
 class Order extends React.Component {
   render() {
     return (
-      <p>Header</p>
+      <p>Order</p>
     )
   }
 }
