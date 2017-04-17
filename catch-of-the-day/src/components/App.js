@@ -47,11 +47,11 @@ class App extends React.Component {
             .keys(this.state.fishes)
             .map(key => <Fish
               key={key}
-              index={key} 
+              index={key}
               addToOrder={this.addToOrder}
               details={this.state.fishes[key]}/>)}
         </div>
-        <Order/>
+        <Order fishes={this.state.fishes} order={this.state.order}/>
         <Inventory
           addFish={this.addFish}
           loadSamples={this.loadSamples}/>
